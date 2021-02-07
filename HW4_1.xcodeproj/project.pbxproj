@@ -13,6 +13,10 @@
 		532DAC8525CF243500883B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532DAC8325CF243500883B76 /* Main.storyboard */; };
 		532DAC8725CF243A00883B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532DAC8625CF243A00883B76 /* Assets.xcassets */; };
 		532DAC8A25CF243A00883B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532DAC8825CF243A00883B76 /* LaunchScreen.storyboard */; };
+		532DAC9425CF400F00883B76 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DAC9325CF400E00883B76 /* UserInfoViewController.swift */; };
+		532DACA525CFF8F600883B76 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DACA425CFF8F600883B76 /* Accounts.swift */; };
+		532DACAD25D01A2F00883B76 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DACAC25D01A2F00883B76 /* WorkViewController.swift */; };
+		532DACB025D01A4900883B76 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DACAF25D01A4900883B76 /* HobbyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		532DAC8625CF243A00883B76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		532DAC8925CF243A00883B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		532DAC8B25CF243A00883B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532DAC9325CF400E00883B76 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		532DACA425CFF8F600883B76 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		532DACAC25D01A2F00883B76 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		532DACAF25D01A4900883B76 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		532DAC7C25CF243500883B76 /* HW4_1 */ = {
 			isa = PBXGroup;
 			children = (
-				532DAC7D25CF243500883B76 /* AppDelegate.swift */,
-				532DAC7F25CF243500883B76 /* SceneDelegate.swift */,
-				532DAC8125CF243500883B76 /* ViewController.swift */,
-				532DAC8325CF243500883B76 /* Main.storyboard */,
+				532DAC9725CFF28400883B76 /* ViewControllers */,
+				532DAC9E25CFF47200883B76 /* Model */,
+				532DAC9625CFF25300883B76 /* StoryBoards */,
 				532DAC8625CF243A00883B76 /* Assets.xcassets */,
-				532DAC8825CF243A00883B76 /* LaunchScreen.storyboard */,
-				532DAC8B25CF243A00883B76 /* Info.plist */,
+				532DACA925D0112300883B76 /* Resourses */,
+				532DAC9825CFF30F00883B76 /* SupportFiles */,
 			);
 			path = HW4_1;
+			sourceTree = "<group>";
+		};
+		532DAC9625CFF25300883B76 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				532DAC8325CF243500883B76 /* Main.storyboard */,
+				532DAC8825CF243A00883B76 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		532DAC9725CFF28400883B76 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				532DAC8125CF243500883B76 /* ViewController.swift */,
+				532DAC9325CF400E00883B76 /* UserInfoViewController.swift */,
+				532DACAC25D01A2F00883B76 /* WorkViewController.swift */,
+				532DACAF25D01A4900883B76 /* HobbyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		532DAC9825CFF30F00883B76 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				532DAC7D25CF243500883B76 /* AppDelegate.swift */,
+				532DAC7F25CF243500883B76 /* SceneDelegate.swift */,
+				532DAC8B25CF243A00883B76 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		532DAC9E25CFF47200883B76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				532DACA425CFF8F600883B76 /* Accounts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		532DACA925D0112300883B76 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				532DAC8225CF243500883B76 /* ViewController.swift in Sources */,
+				532DAC9425CF400F00883B76 /* UserInfoViewController.swift in Sources */,
+				532DACB025D01A4900883B76 /* HobbyViewController.swift in Sources */,
 				532DAC7E25CF243500883B76 /* AppDelegate.swift in Sources */,
+				532DACAD25D01A2F00883B76 /* WorkViewController.swift in Sources */,
 				532DAC8025CF243500883B76 /* SceneDelegate.swift in Sources */,
+				532DACA525CFF8F600883B76 /* Accounts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46GSK847SZ;
-				INFOPLIST_FILE = HW4_1/Info.plist;
+				INFOPLIST_FILE = HW4_1/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "NikitaZharinov.HW4-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46GSK847SZ;
-				INFOPLIST_FILE = HW4_1/Info.plist;
+				INFOPLIST_FILE = HW4_1/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "NikitaZharinov.HW4-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
